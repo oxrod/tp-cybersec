@@ -1,8 +1,8 @@
-import LoginForm from "@/components/LoginForm/LoginForm";
+import SignUpForm from "@/components/SignUpForm/SignUpForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
-export default function Home() {
+const SignUpPage = () => {
   return (
     <main className="flex relative min-h-screen flex-col items-center justify-center p-24">
       <Image
@@ -13,12 +13,14 @@ export default function Home() {
       />
       <Card className="z-10">
         <CardHeader>
-          <CardTitle>Connexion</CardTitle>
+          <CardTitle>Inscription</CardTitle>
         </CardHeader>
         <CardContent>
-          <LoginForm />
+          <SignUpForm />
         </CardContent>
       </Card>
     </main>
   );
-}
+};
+
+export default SignUpPage;
